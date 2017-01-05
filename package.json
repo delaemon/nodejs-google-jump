@@ -1,0 +1,15 @@
+{
+  "name": "google-jump",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jump.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node jump.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bignum": "0.12.5"
+  }
+}
