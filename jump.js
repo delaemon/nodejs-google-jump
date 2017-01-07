@@ -8,7 +8,6 @@ function Hash(key, numBuckets) {
     var nb = bignum(numBuckets)
     var k = bignum(key)
     var m = bignum('2862933555777941757')
-    var i = 0
     while (nb.gt(j)) {
         b = bignum(j)
         k = k.mul(m).add(1)
@@ -16,7 +15,7 @@ function Hash(key, numBuckets) {
         t1 = bignum(1).shiftLeft(31).toNumber().toFixed(9)
         t2 = k.shiftRight(33).toNumber().toFixed(8)
         j = bignum(bb * (t1/t2))
-        break
+        break // fixme
     }
 
     return b
